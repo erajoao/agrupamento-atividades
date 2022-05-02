@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Formulário 2</title>
+</head>
+<body>
+    <fieldset>
+        <legend>Por favor, preencha com seus dados para realizar o cadastro.</legend>
+    <div>
+        <!--Preenchimento de dados-->
+    <form action="/url" method="post">
+        <label for="nome">Nome Completo:</label>
+        <input type="text" id="nome" name="usuario_nome" />
+        <label for="state">Estado:</label>
+        <select id="estado" name="estado">
+            <option value="AC">Acre</option>
+            <option value="AL">Alagoas</option>
+            <option value="AP">Amapá</option>
+            <option value="AM">Amazonas</option>
+            <option value="BA">Bahia</option>
+            <option value="CE">Ceará</option>
+            <option value="DF">Distrito Federal</option>
+            <option value="ES">Espírito Santo</option>
+            <option value="GO">Goiás</option>
+            <option value="MA">Maranhão</option>
+            <option value="MT">Mato Grosso</option>
+            <option value="MS">Mato Grosso do Sul</option>
+            <option value="MG">Minas Gerais</option>
+            <option value="PA">Pará</option>
+            <option value="PB">Paraíba</option>
+            <option value="PR">Paraná</option>
+            <option value="PE">Pernambuco</option>
+            <option value="PI">Piauí</option>
+            <option value="RJ">Rio de Janeiro</option>
+            <option value="RN">Rio Grande do Norte</option>
+            <option value="RS">Rio Grande do Sul</option>
+            <option value="RO">Rondônia</option>
+            <option value="RR">Roraima</option>
+            <option value="SC">Santa Catarina</option>
+            <option value="SP">São Paulo</option>
+            <option value="SE">Sergipe</option>
+            <option value="TO">Tocantins</option>
+        </select>
+        <label for="city">Cidade:</label>
+        <input type="text" id="city" name="Cidade" />
+        <label for="data">Data de Nascimento:</label>
+        <input type="date" id="data" name="Data de nascimento" />
+    </div>
+        <!--Campo para escolha de opções Radio e Checkbox-->
+    <div>    
+        <p>Qual seu gênero?</p>
+        <label for="opcao1">Masculino</label>
+        <input type="radio" id="opçao1" name="escolha" />
+        <label for="opcao2">Feminino</label>
+        <input type="radio" id="opçao2" name="escolha" />
+        <label for="opcao3">Outro</label>
+        <input type="radio" id="opçao3" name="escolha" />
+        <p>Com quais editores de texto você está familiarizado?</p>
+        <label for="editor1">Visual Studio Code</label>
+        <input type="checkbox" id="editor1" name="escolha2" />
+        <label for="editor2">Sublime Text</label>
+        <input type="checkbox" id="editor2" name="escolha2" />
+        <label for="editor3">Outro</label>
+        <input type="checkbox" id="editor3" name="escolha2" />
+        <p>De 0 a 10, quão familiarizado com HTML você está?</p>
+        <input type="range" list="tickmarks">
+            <datalist id="tickmarks">
+                <option value="10">
+                <option value="20">
+                <option value="30">
+                <option value="40">
+                <option value="50">
+                <option value="60">
+                <option value="70">
+                <option value="80">
+                <option value="90">
+                <option value="100">
+            </datalist>
+        <br />
+        <br />
+    </div>
+        <!--Criação de login e senha-->
+    <div>
+        <label for="email">e-mail:</label>
+        <input type="email" id="email" name="email" />   
+        <label for="usuário">Usuário</label>
+        <input type="text" id="usuário" name="usuário" />
+        <label for="password:">Senha</label>
+        <input type="password" id="password" name="Senha" />
+        <label for="password:">Repetir Senha</label>
+        <input type="password" id="password2" name="Repetir Senha" />
+        <input type="submit" value="Enviar" />
+        <input type="reset" value="Reset" />
+    </div> 
+    </form>
+    </fieldset>
+</body>
+</html>
